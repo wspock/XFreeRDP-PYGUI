@@ -18,10 +18,10 @@ homepath = str(os.getenv("HOME"))
 fwd_path = homepath
 # example: fwd_path = "/path/to"
 
-config_file = "{}/.viewrdp/config.conf".format(homepath)
+config_file = "{}/.xfreerdp-pygui/config.conf".format(homepath)
 # example: config_file = "/path/to/config.conf"
 
-icon_file = "{}/.viewrdp/icon.png".format(homepath)
+icon_file = "{}/.xfreerdp-pygui/icon.png".format(homepath)
 # example: icon_file =
 
 bg_color = "#DF7401"
@@ -143,25 +143,25 @@ def get_connection_name():
 
 root.configure(bg=bg_color)
 root.resizable(0, 0)
-root.title("xFreeRdp connect")
+root.title("XFreeRDP PYGUI")
 root.minsize(300, 135)
 
 ipaddr = Entry(root, width=20, bd=3, font='12')
 ipaddr.grid(row=1, column=1)
 
-ipaddr_label = Label(root, text='ip address', bg=bg_color, font='12', fg=labels_color)
+ipaddr_label = Label(root, text='Host/IP', bg=bg_color, font='12', fg=labels_color)
 ipaddr_label.grid(row=1, column=2, columnspan=2)
 
 username = Entry(root, width=20, bd=3, font='12')
 username.grid(row=2, column=1)
 
-username_label = Label(root, text='username', bg=bg_color, font='12', fg=labels_color)
+username_label = Label(root, text='User', bg=bg_color, font='12', fg=labels_color)
 username_label.grid(row=2, column=2, columnspan=2)
 
 password = Entry(root, width=20, bd=3, show="*", font='12')
 password.grid(row=3, column=1)
 
-password_label = Label(root, text='password', bg=bg_color, font='12', fg=labels_color)
+password_label = Label(root, text='Password', bg=bg_color, font='12', fg=labels_color)
 password_label.grid(row=3, column=2, columnspan=2)
 
 wsize = Entry(root, width=20, bd=3, font='12')
@@ -176,11 +176,11 @@ connections_list.grid(row=5, column=1)
 connections_list.bind("<<ComboboxSelected>>", insert_values)
 connections_list.focus_set()
 
-get_connection_name = Button(root, text='save', width=4, font='12', bg=save_button_color,
+get_connection_name = Button(root, text='Save', width=4, font='12', bg=save_button_color,
                              fg=buttons_font_color, command=get_connection_name)
 get_connection_name.grid(row=5, column=2)
 
-connect = Button(root, text='connect', width=5, font='12', bg=connect_button_color,
+connect = Button(root, text='Connect', width=5, font='12', bg=connect_button_color,
                  fg=buttons_font_color, command=connect)
 connect.grid(row=5, column=3)
 

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=XFreeRDP-PYGUI
+Comment=Connect to another computer via RDP protocol
+Comment[pt_BR]=Conecte a outro computador via protocolo RDP
+GenericName=XFreeRDP-PYGUI
+Keywords=rdp
+Exec=/home/user/.xfreerdp-pygui/rdp.py
+Terminal=false
+Type=Application
+Icon=/home/user/.xfreerdp-pygui/icon.png
+Path=
+Categories=Network
+NoDisplay=false

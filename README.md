@@ -1,38 +1,41 @@
-# xFreeRdp-connect
-Simple minimail GUI for FreeRdp based on Python 3 Tkinter
+# English
+
+# XFreeRDP-PYGUI
+Simple minimail GUI for FreeRDP based on Python 3 Tkinter (forked from https://github.com/xtimon/xFreeRdp-connect)
 
 **Installation instructions:**
 
 Preparation:
 
-    sudo apt-get install FreeRDP python3-tk notify-osd
+    sudo apt install freerdp2-x11 python3-tk notify-osd
 
 Clone this project:  
 
-    git clone https://github.com/xtimon/xFreeRdp-connect.git ~/.viewrdp
+    git clone https://github.com/wspock/XFreeRDP-PYGUI.git ~/.xfreerdp-pygui
 
 Prepare application label:
 
-    sed -i "s|/home/user/|$HOME/|g" ~/.viewrdp/xfreepy.desktop
+    sed -i "s|/home/youruser/|$HOME/|g" ~/.xfreerdp-pygui/xpygui.desktop
 
 Create application label:
 
-    sudo ln -s ~/.viewrdp/xfreepy.desktop /usr/share/applications/
+    sudo ln -s ~/.xfreerdp-pygui/xpygui.desktop /usr/share/applications/
 
 **The configuration file will be stored here:**
 
-    ~/.viewrdp/config.conf
+    ~/.xfreerdp-pygui/config.conf
 
 **An example configuration file:**
 
     [Connection_name]
-    ip_address = 192.168.10.10
-    username = User
-    password = Password
+    ip_address = 192.168.42.13
+    username = Spock
+    password = ProsperLife
     
     [Connection_name2]
-    ip_address = 192.168.10.11:3122
-    username = User2
-    password = Password2
+    ip_address = 192.168.42.13:3122
+    username = Spock
+    password = ProsperLife
 
 
+# Português

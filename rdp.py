@@ -24,11 +24,11 @@ config_file = "{}/.xfreerdp-pygui/config.conf".format(homepath)
 icon_file = "{}/.xfreerdp-pygui/icon.png".format(homepath)
 # example: icon_file =
 
-bg_color = "#DF7401"
+bg_color = "#03a9f4"
 labels_color = "#EDE9E9"
-save_button_color = "#0B3B17"
-connect_button_color = "#61380B"
-delete_button_color = "#B40404"
+save_button_color = "#52a447"
+connect_button_color = "#ff8b3d"
+delete_button_color = "#df2c14"
 buttons_font_color = "#F6E3CE"
 
 connect_list = []
@@ -149,7 +149,7 @@ root.minsize(300, 135)
 ipaddr = Entry(root, width=20, bd=3, font='12')
 ipaddr.grid(row=1, column=1)
 
-ipaddr_label = Label(root, text='Host/IP', bg=bg_color, font='12', fg=labels_color)
+ipaddr_label = Label(root, text='Host/IP:Port', bg=bg_color, font='12', fg=labels_color)
 ipaddr_label.grid(row=1, column=2, columnspan=2)
 
 username = Entry(root, width=20, bd=3, font='12')

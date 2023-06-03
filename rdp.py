@@ -168,7 +168,7 @@ wsize = Entry(root, width=20, bd=3, font='12')
 wsize.insert(0, window_size)
 wsize.grid(row=4, column=1)
 
-wsize_label = Label(root, text='window size', bg=bg_color, font='12', fg=labels_color)
+wsize_label = Label(root, text='Window Size', bg=bg_color, font='12', fg=labels_color)
 wsize_label.grid(row=4, column=2, columnspan=2)
 
 connections_list = ttk.Combobox(width=22, values=connect_list, height=20)
